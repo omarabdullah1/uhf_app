@@ -1,4 +1,3 @@
-# uhf_app
 # UHF RFID System - Complete Project Documentation
 
 ## 📋 Project Overview
