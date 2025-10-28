@@ -26,7 +26,7 @@ architecture-beta
     service react(server)[React Web App] in frontend
     service javagui(server)[Java Swing GUI] in frontend
     
-    service nodejs(server)[Node.js API Server] in backend
+    service nodejs(server)[NodeJS API Server] in backend
     service cmdline(server)[CommandLineMain] in backend
     service javasdk(database)[Java RFID SDK] in backend
     
