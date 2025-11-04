@@ -1,0 +1,1204 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"preferredSize": &Dimension0 new java.awt.Dimension( 42, 42 )
+				"border": new javax.swing.border.TitledBorder( "功率" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ANT1:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 25
+					"width": 40
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt1Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 20
+					"width": 80
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt2Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "ANT2:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 175
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt3Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "ANT3:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 15
+					"y": 55
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt4Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "ANT4:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 175
+					"y": 55
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetPower"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetPowerActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 50
+					"y": 265
+					"width": 85
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetPoer"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetPoerActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 170
+					"y": 265
+					"width": 80
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "ANT5:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 15
+					"y": 85
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt5Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 80
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt6Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 80
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "ANT6:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 175
+					"y": 85
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt7Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 110
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "ANT7:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 15
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt8Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 110
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "ANT8:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 175
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt9Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 140
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "ANT9:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 15
+					"y": 145
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt10Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 140
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "ANT10:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 17
+					"x": 175
+					"y": 145
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt11Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 170
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label14"
+					"text": "ANT11:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 10
+					"y": 175
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label15"
+					"text": "ANT12:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 170
+					"y": 175
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt12Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 170
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt14Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 200
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label16"
+					"text": "ANT14:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 170
+					"y": 205
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt13Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 200
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label17"
+					"text": "ANT13:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 10
+					"y": 205
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt16Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 220
+					"y": 230
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label18"
+					"text": "ANT16:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 170
+					"y": 235
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbAnt15Power"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 60
+					"y": 230
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label19"
+					"text": "ANT15:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 10
+					"y": 235
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 10
+				"width": 325
+				"height": 310
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel2"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "天线" )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT1"
+					"text": "ANT1"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 25
+					"width": 70
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT2"
+					"text": "ANT2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 22
+					"x": 85
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT3"
+					"text": "ANT3"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 22
+					"x": 160
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT4"
+					"text": "ANT4"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 22
+					"x": 235
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetANT"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetANTActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 175
+					"y": 130
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetANT"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetANTActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 60
+					"y": 130
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT5"
+					"text": "ANT5"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 15
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT6"
+					"text": "ANT6"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 85
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT7"
+					"text": "ANT7"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 160
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT8"
+					"text": "ANT8"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 235
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT9"
+					"text": "ANT9"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 15
+					"y": 75
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT10"
+					"text": "ANT10"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 85
+					"y": 75
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT11"
+					"text": "ANT11"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 160
+					"y": 75
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT12"
+					"text": "ANT12"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 235
+					"y": 75
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT13"
+					"text": "ANT13"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 15
+					"y": 100
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT14"
+					"text": "ANT14"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 85
+					"y": 100
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT15"
+					"text": "ANT15"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 160
+					"y": 100
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "cbANT16"
+					"text": "ANT16"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 22
+					"x": 235
+					"y": 100
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 165
+				"x": 5
+				"y": 325
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel3"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "频段" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "频段:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 90
+					"height": 17
+					"x": 10
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbFrequencyBand"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 185
+					"height": 30
+					"x": 90
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetFrequencyBand"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetFrequencyBandActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 55
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetFrequencyBand"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetFrequencyBandActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 175
+					"y": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 110
+				"x": 5
+				"y": 495
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel5"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "协议" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "协议:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 65
+					"height": 17
+					"x": 15
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbProtocol"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 200
+					"height": 30
+					"x": 80
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetProtocol"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetProtocolActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 160
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetProtocol"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetProtocolActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 40
+					"y": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 105
+				"x": 715
+				"y": 570
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel17"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "盘点模式" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label22"
+					"text": "模式:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 40
+					"height": 17
+					"x": 20
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbEPCAndTIDUserMode"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 235
+					"height": 30
+					"x": 55
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetEPCAndTIDUserMode"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetEPCAndTIDUserModeActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 55
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetEPCAndTIDUserMode"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetEPCAndTIDUserModeActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 170
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label23"
+					"text": "User起始地址:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 25
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tf_user_prt"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 105
+					"y": 60
+					"width": 60
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label24"
+					"text": "User长度:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 78
+					"height": 17
+					"x": 165
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tf_user_len"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 225
+					"y": 60
+					"width": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 140
+				"x": 350
+				"y": 10
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel18"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "Gen2" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label25"
+					"text": "Session:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 17
+					"x": 10
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmb_Gen2_session"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 70
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label26"
+					"text": "Target"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 17
+					"x": 165
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmb_Gen2_target"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 215
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetGen2"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetGen2ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 175
+					"y": 70
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetGen2"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetGen2ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 55
+					"y": 70
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 115
+				"x": 350
+				"y": 160
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel19"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "蜂鸣器" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label27"
+					"text": "蜂鸣器:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 17
+					"x": 15
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "rbtn_Beep_On"
+					"text": "开"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbtn_Beep_OnActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 75
+					"y": 35
+					"width": 50
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "rbtn_Beep_Off"
+					"text": "关"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbtn_Beep_OffActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 21
+					"x": 140
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetBeep"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetBeepActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 60
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetBeep"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetBeepActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 180
+					"y": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 100
+				"x": 350
+				"y": 290
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel20"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "URx IP" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label28"
+					"text": "IP:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 15
+					"y": 20
+					"width": 29
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textFieldIP"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 15
+					"width": 245
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label29"
+					"text": "子网掩码:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 50
+					"width": 85
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label30"
+					"text": "网关:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 80
+					"width": 65
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textFieldSubNetMask"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 45
+					"width": 245
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textFieldGateWay"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 75
+					"width": 245
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetLocal_IP"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetLocal_IPActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 85
+					"y": 145
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetLocal_IP"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetLocal_IPActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 205
+					"y": 145
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label33"
+					"text": "端口:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 65
+					"height": 17
+					"x": 10
+					"y": 115
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textFieldPort"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 245
+					"height": 30
+					"x": 90
+					"y": 110
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 380
+				"height": 190
+				"x": 710
+				"y": 15
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel21"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "自动模式下远程IP" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label31"
+					"text": "IP:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 30
+					"height": 17
+					"x": 40
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textFieldDestinationIP"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 245
+					"height": 30
+					"x": 100
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label32"
+					"text": "端口:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 17
+					"x": 40
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textFieldDestinationPort"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 245
+					"height": 30
+					"x": 100
+					"y": 55
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetDestinationPort"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetDestinationPortActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 215
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetDestinationIP"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetDestinationIPActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 95
+					"y": 95
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 380
+				"height": 140
+				"x": 710
+				"y": 210
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel22"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "工作模式" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label34"
+					"text": "模式:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 17
+					"x": 10
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbWorkMode"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 235
+					"height": 30
+					"x": 70
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetWorkMode"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetFrequencyModeActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 180
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetWorkMode"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetFrequencyModeActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 60
+					"y": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 105
+				"x": 350
+				"y": 395
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel23"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "链路" )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbRFLink"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 195
+					"height": 30
+					"x": 80
+					"y": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": "链路:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 17
+					"x": 15
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetRFLink"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetLinkActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 80
+					"height": 30
+					"x": 155
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetRFLink"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetLinkActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 35
+					"y": 65
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 325
+				"height": 110
+				"x": 350
+				"y": 505
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel24"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "UR4-GPIO" )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnSetGPIO"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSetGPIOActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 30
+					"x": 310
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbRelay"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 235
+					"height": 30
+					"x": 70
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label35"
+					"text": "继电器:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 65
+					"height": 17
+					"x": 10
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label36"
+					"text": "输入1:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 17
+					"x": 10
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label37"
+					"text": "输入2:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 17
+					"x": 170
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnGetGPIO"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnGetGPIOActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 30
+					"x": 310
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbInput1"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 60
+					"width": 95
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cmbInput2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 220
+					"y": 60
+					"width": 83
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 380
+				"height": 100
+				"x": 710
+				"y": 355
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel25"
+				"preferredSize": #Dimension0
+				"border": new javax.swing.border.TitledBorder( "UR1A-GPIO" )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnUR1ASetGPIO"
+					"text": "设置"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUR1ASetGPIOActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 30
+					"x": 310
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbOutput1"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 85
+					"height": 30
+					"x": 70
+					"y": 20
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label38"
+					"text": "输出1:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 17
+					"x": 10
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label39"
+					"text": "输入1:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 17
+					"x": 10
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label40"
+					"text": "输入2:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 75
+					"height": 17
+					"x": 165
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnUR1AGetGPIO"
+					"text": "获取"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUR1AGetGPIOActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 30
+					"x": 310
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbUR1AInput1"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 60
+					"width": 85
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbUR1AInput2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 220
+					"y": 60
+					"width": 83
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label41"
+					"text": "输出2:"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 65
+					"height": 17
+					"x": 165
+					"y": 25
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "cbOutput2"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 83
+					"height": 30
+					"x": 215
+					"y": 20
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 380
+				"height": 100
+				"x": 710
+				"y": 465
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 1120, 750 )
+		} )
+	}
+}

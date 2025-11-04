@@ -1,0 +1,43 @@
+# Production Environment Configuration for systemd service
+# This file should be placed at /etc/rfid-system/environment
+
+# Application Configuration
+NODE_ENV=production
+APP_PORT=5000
+APP_HOST=0.0.0.0
+
+# Java Configuration
+JAVA_OPTS=-Xmx2048m -Xms1024m -server -XX:+UseG1GC
+JAVA_LIBRARY_PATH=/opt/rfid-system/native:/opt/rfid-system/libs
+
+# RFID Configuration
+RFID_CONNECTION_TYPE=network
+RFID_NETWORK_IP=192.168.1.100
+RFID_NETWORK_PORT=8888
+RFID_POWER_LEVEL=25
+RFID_FREQUENCY=915.0
+RFID_REGION=US
+
+# Database Configuration
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=rfid_production
+DB_USER=rfid_prod_user
+DB_PASSWORD=YOUR_DB_PASSWORD_HERE
+
+# Security Configuration
+API_KEY=YOUR_API_KEY_HERE
+JWT_SECRET=YOUR_JWT_SECRET_HERE
+CORS_ORIGINS=https://rfid-app.yourcompany.com
+
+# Logging Configuration
+LOG_LEVEL=info
+LOG_DIR=/var/log/rfid-system
+LOG_CONSOLE=false
+LOG_SYSLOG=true
+
+# File Paths
+DATA_DIR=/opt/rfid-system/data
+CONFIG_DIR=/etc/rfid-system
+TEMP_DIR=/tmp/rfid-system
+PID_DIR=/var/run/rfid-system

@@ -1,0 +1,61 @@
+# Development Dockerfile
+FROM openjdk:11-jdk-slim
+
+# Install development dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    nodejs \
+    npm \
+    git \
+    vim \
+    htop \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Create application user with sudo access for development
+RUN groupadd -r rfid && useradd -r -g rfid -s /bin/bash rfid \
+    && mkdir -p /home/rfid \
+    && chown rfid:rfid /home/rfid
+
+# Install global npm packages for development
+RUN npm install -g nodemon concurrently
+
+# Copy package files for caching
+COPY rfid-server/package*.json /app/rfid-server/
+COPY rfid-client/package*.json /app/rfid-client/
+
+# Install dependencies
+WORKDIR /app/rfid-server
+RUN npm install
+
+WORKDIR /app/rfid-client
+RUN npm install
+
+# Go back to app root
+WORKDIR /app
+
+# Set environment variables for development
+ENV NODE_ENV=development
+ENV JAVA_OPTS="-Xmx1024m -Xms512m"
+ENV JAVA_LIBRARY_PATH="/app/native:/app/libs"
+ENV DEBUG="myuhf:*"
+
+# Create necessary directories
+RUN mkdir -p /app/logs /app/data /app/temp /app/pids \
+    && chown -R rfid:rfid /app
+
+# Expose development ports
+EXPOSE 5000 3000 9229
+
+# Health check for development
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:5000/api/health || exit 1
+
+# Switch to application user
+USER rfid
+
+# Default development command
+CMD ["tail", "-f", "/dev/null"]

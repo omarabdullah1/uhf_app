@@ -1,0 +1,73 @@
+[Unit]
+Description=UHF RFID System Service
+Documentation=https://github.com/yourcompany/uhf-rfid-system
+After=network.target postgresql.service redis.service
+Wants=postgresql.service redis.service
+
+[Service]
+Type=simple
+User=rfid
+Group=rfid
+WorkingDirectory=/opt/rfid-system
+
+# Environment file
+EnvironmentFile=/etc/rfid-system/environment
+
+# Java configuration
+Environment=JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+Environment=JAVA_OPTS=-Xmx2048m -Xms1024m -server -XX:+UseG1GC
+Environment=JAVA_LIBRARY_PATH=/opt/rfid-system/native
+
+# Application configuration
+Environment=NODE_ENV=production
+Environment=APP_HOME=/opt/rfid-system
+Environment=LOG_DIR=/var/log/rfid-system
+Environment=PID_DIR=/var/run/rfid-system
+
+# Start the application
+ExecStart=/usr/bin/node /opt/rfid-system/rfid-server/server.js
+
+# Pre-start checks
+ExecStartPre=/bin/mkdir -p /var/run/rfid-system
+ExecStartPre=/bin/chown rfid:rfid /var/run/rfid-system
+ExecStartPre=/bin/mkdir -p /var/log/rfid-system
+ExecStartPre=/bin/chown rfid:rfid /var/log/rfid-system
+
+# Health check
+ExecStartPost=/bin/sleep 10
+ExecStartPost=/bin/bash -c 'curl -f http://localhost:5000/api/health || exit 1'
+
+# Reload configuration
+ExecReload=/bin/kill -HUP $MAINPID
+
+# Stop the service
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Restart configuration
+Restart=always
+RestartSec=10
+StartLimitBurst=3
+StartLimitInterval=60
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/log/rfid-system /var/run/rfid-system /opt/rfid-system/data
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Standard input/output
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rfid-system
+
+[Install]
+WantedBy=multi-user.target
+Alias=rfid.service
